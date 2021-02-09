@@ -1,5 +1,7 @@
-package com.metropolitan.demo.student;
+package com.metropolitan.demo.config;
 
+import com.metropolitan.demo.models.Student;
+import com.metropolitan.demo.repositories.StudentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

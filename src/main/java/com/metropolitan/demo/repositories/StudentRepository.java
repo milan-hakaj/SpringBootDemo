@@ -1,5 +1,6 @@
-package com.metropolitan.demo.student;
+package com.metropolitan.demo.repositories;
 
+import com.metropolitan.demo.models.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

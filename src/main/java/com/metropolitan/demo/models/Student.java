@@ -1,4 +1,4 @@
-package com.metropolitan.demo.student;
+package com.metropolitan.demo.models;
 
 import javax.persistence.*;
 import java.time.LocalDate;
