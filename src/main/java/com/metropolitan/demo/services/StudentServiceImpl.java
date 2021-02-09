@@ -29,7 +29,7 @@ public class StudentServiceImpl implements IStudentService {
 
         if(studentByEmail.isPresent()) {
             // THROW IF EMAIL TAKEN
-            throw new IllegalStateException("Email already taken.");
+            throw new ApiRequestException("Email already taken.");
         }
 
         this.studentRepository.save(student);
@@ -46,7 +46,7 @@ public class StudentServiceImpl implements IStudentService {
 
         if (!exists) {
             // THROW IF NOT EXIST
-            throw new IllegalStateException("student with id " + id + " does not exists.");
+            throw new ApiRequestException("student with id " + id + " does not exists.");
         }
 
         this.studentRepository.deleteById(id);
